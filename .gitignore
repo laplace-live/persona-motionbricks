@@ -1,0 +1,5 @@
+node_modules/
+# NVIDIA's model and sample motions: fetched locally by `bun run fetch-assets`, never committed.
+assets/*
+!assets/.gitkeep
+.DS_Store

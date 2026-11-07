@@ -1,0 +1,29 @@
+{
+  "name": "laplace-persona-motionbricks",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Drive a LAPLACE Persona VRM avatar with NVIDIA MotionBricks over VMC",
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "engines": {
+    "bun": ">=1.3"
+  },
+  "scripts": {
+    "fetch-assets": "bun scripts/fetch-assets.ts",
+    "start": "bun src/main.ts",
+    "tour": "bun src/main.ts --tour",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write",
+    "lint": "biome lint"
+  },
+  "dependencies": {
+    "@laplace.live/persona-sdk": "^1.36.0",
+    "onnxruntime-node": "1.30.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.6",
+    "@types/bun": "^1.4.4",
+    "typescript": "~6.0.3"
+  }
+}
